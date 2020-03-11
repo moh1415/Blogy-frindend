@@ -1,0 +1,10 @@
+API
+    /api/articles
+Components
+    app
+     articles (list Container)
+        articles (list Item)
+
+ state [App]
+
+props       
