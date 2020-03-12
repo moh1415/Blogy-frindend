@@ -2,7 +2,8 @@ API
     /api/articles
 Components
     app
-     articles (list Container)
+     articles (list Container) => api call to /api/articles
+                               => setstate on app
         articles (list Item)
 
  state [App]
