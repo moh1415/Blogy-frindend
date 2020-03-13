@@ -9,4 +9,10 @@ const getAllArticles = () => {
 const deleteArticleByID = (id) => {
   return axios.delete(`${apiUrl}/articles/${id}`);
 }
-export { getAllArticles, deleteArticleByID };
+const addnewArticle = (data) => {
+  return axios.post(`${apiUrl}/articles`,{article:{title:data.title,author:data.author,content:data.content}});
+}
+const updateArticle = (data,id) => {
+  return axios.patch(`${apiUrl}/articles/${id}`,{article:{title:data.title,author:data.author,content:data.content,_id:id}});
+}
+export { getAllArticles, deleteArticleByID,addnewArticle,updateArticle };
